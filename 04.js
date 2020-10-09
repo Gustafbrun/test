@@ -34,7 +34,10 @@ function get_average_sum(inputArray) {
     }
   }
   //creates an object
-  let output = {};
+  let output = {
+    average: 0,
+    sum: 0
+  };
   //the object gets an attribute called sum and its value is the sum of the elements in the array
   output.sum = inputArray.reduce((acc, curr) => acc += curr);
   //the object gets an attribute called average and its value is the sum devided by the length of the array
@@ -42,6 +45,6 @@ function get_average_sum(inputArray) {
   return output;
 }
 
-myArray = [-1,2,18];
+myArray = [1,2,3];
 myReturnedObject = get_average_sum(myArray);
 console.log(myReturnedObject);
