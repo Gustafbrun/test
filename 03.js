@@ -10,9 +10,10 @@ Lägg märke till att ni måste hantera mellanslag. "Ni talar bra latin" är t e
 
 */
 
-function is_palindrome() {
-
+function is_palindrome(inputString) {
+    return inputString.split(' ').join('') === inputString.split(' ').join('').split('').reverse().join('') ? true : false;
 }
+
 
 let test_string = 'sirap i paris';
 if ( is_palindrome( test_string ) ) {
